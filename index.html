@@ -10,7 +10,7 @@
   </head>
   <body class="container">
     <h1>콜라 콜라 자판기</h1>
-    <section class="machine-purchase">
+    <section class="container-machine">
       <h1 class="ir">자판기 음료선택</h1>
       <ul class="list-item">
         <li>
@@ -56,47 +56,51 @@
           </button>
         </li>
       </ul>
-      <section>
+      <section class="container-checkout">
         <h2 class="ir">구매를 위한 정보</h2>
-        <p>잔액: <span>원</span></p>
-        <button>거스름돈 반환</button>
-        <input type="number" placeholder="입금액 입력" />
-        <button>입금</button>
-        <ul>
+        <p class="checkout-balance">
+          잔액: <span class="checkout-won">원</span>
+        </p>
+        <button class="get-change-button">거스름돈 반환</button>
+        <input class="input-money" type="number" placeholder="입금액 입력" />
+        <button class="input-button">입금</button>
+        <ul class="my-cola-list">
           <li>
-            <img src="./images/cola-green.png" alt="" />
-            <strong>Green Cola</strong>
-            <span>1</span>
+            <img class="my-cola-green" src="./images/cola-green.png" alt="" />
+            <strong class="my-cola-name">Green Cola</strong>
+            <span class="my-cola-number">1</span>
           </li>
           <li>
-            <img src="./images/cola-orange.png" alt="" />
-            <strong>Orange Cola</strong>
-            <span>2</span>
+            <img class="my-cola-green" src="./images/cola-orange.png" alt="" />
+            <strong class="my-cola-name">Orange Cola</strong>
+            <span class="my-cola-number">2</span>
           </li>
         </ul>
-        <button type="submit">획득</button>
+        <button class="get-cola-button" type="submit">획득</button>
       </section>
     </section>
-    <section>
+    <section class="my-status">
       <h2 class="ir">나의 상태 확인</h2>
-      <div>
-        <p>소지금: <span>30,000원</span></p>
+      <div class="my-blalnce">
+        <p class="my-balance-txt">
+          소지금: <span class="my-balance-won">30,000원</span>
+        </p>
       </div>
-      <section>
-        <p>획득한 음료</p>
-        <ul>
+      <section class="my-cola">
+        <p class="my-cola-text">획득한 음료</p>
+        <ul class="my-cola-list">
           <li>
-            <img src="./images/cola-green.png" alt="" />
-            <strong>Green Cola</strong>
-            <span>1</span>
+            <img class="my-cola-green" src="./images/cola-green.png" alt="" />
+            <strong class="my-cola-name">Green Cola</strong>
+            <span class="my-cola-number">1</span>
           </li>
           <li>
-            <img src="./images/cola-orange.png" alt="" />
-            <strong>Orange Cola</strong>
-            <span>2</span>
+            <img class="my-cola-green" src="./images/cola-orange.png" alt="" />
+            <strong class="my-cola-name">Orange Cola</strong>
+            <span class="my-cola-number">2</span>
           </li>
         </ul>
-        <p>총금액: 0원</p>
+        <p class="total-money">총금액: 0원</p>
       </section>
     </section>
   </body>
