@@ -1,1 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #eae8fe;
+  display: flex;
+  justify-content: center;
+  gap: 0 28px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container .logo {
+  width: 100%;
+  max-width: 386px;
+  height: 180px;
+  background-image: url(./images/Logo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+/* 왼쪽 자판기 시작 */
+
+.container-machine {
+  width: 360px;
+  background-color: #fff;
+  margin-top: 247px;
+  padding: 31px 27px 28px 27px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.list-item li {
+  border-radius: 10px;
+  width: 94px;
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 50%);
+}
+
+.button-cola {
+  padding: 11px 11px 9px 13px;
+}
+
+.image-cola {
+  width: 36px;
+  height: 65px;
+  margin: 0 auto 7px auto;
+}
+
+.name-cola {
+  font-size: 9px;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.price-cola {
+  display: block;
+  font-size: 12px;
+  background: #6327fe;
+  border-radius: 50px;
+  color: #fff;
+  padding: 5px 16px 5px 15px;
+}
+
+/* 오른쪽 자판기 컨테이너 시작 */
+
+.my-status {
+  width: 360px;
+  background-color: #fff;
+  margin-top: 247px;
+}
