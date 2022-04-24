@@ -29,7 +29,6 @@ body {
 /* 왼쪽 자판기 시작 */
 
 .container-machine {
-  width: 360px;
   background-color: #fff;
   padding: 31px 27px 28px 27px;
 }
@@ -38,6 +37,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
+  margin-bottom: 20px;
 }
 
 .list-item li {
@@ -111,7 +111,12 @@ li.sold-out::after {
   box-shadow: 0px 0px 4px rgb(0 0 0 / 50%);
   font-size: 13px;
   border-radius: 5px;
-  /* text-align: center; */
+  font-weight: 400;
+}
+
+.get-change-button:hover,
+.input-button:hover {
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 70%);
 }
 
 .get-change-button {
@@ -135,14 +140,12 @@ li.sold-out::after {
   border-radius: 5px;
   background-color: #eae8fe;
   padding: 12px 10px 12px 12px;
-  margin-bottom: 6px;
 }
 
 .my-cola-list li {
   padding: 8px;
   border-radius: 5px;
   background-color: #fff;
-  /* width: 100%; */
 }
 
 .my-cola-list li + li {
@@ -156,7 +159,6 @@ li.sold-out::after {
 }
 
 .container-checkout {
-  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
@@ -187,13 +189,19 @@ li.sold-out::after {
   background: #6327fe;
 }
 
+.get-cola-button:hover {
+  background-color: #5c25e7;
+}
+
 .checkout-balance,
 .input-money,
 .my-cola-list {
   grid-column: 1/3;
 }
 
-/* 오른쪽 자판기 컨테이너 시작 */
+/* 왼쪽 자판기 끝 */
+
+/* 오른쪽 자판기 시작 */
 
 .my-balance {
   padding: 9px 27px;
@@ -227,6 +235,7 @@ li.sold-out::after {
 
 .list-done {
   height: 374px;
+  margin-bottom: 6px;
 }
 
 .total-money {
