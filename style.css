@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   background-color: #eae8fe;
+}
+
+.container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -16,8 +19,8 @@
 
 .container .logo {
   width: 100%;
-  max-width: 386px;
   height: 180px;
+  max-width: 386px;
   background-image: url(./images/Logo.png);
   background-size: 100%;
   top: 0;
@@ -28,7 +31,6 @@
 .container-machine {
   width: 360px;
   background-color: #fff;
-  /* margin-top: 247px; */
   padding: 31px 27px 28px 27px;
 }
 
@@ -42,6 +44,27 @@
   border-radius: 10px;
   width: 94px;
   box-shadow: 0px 0px 4px rgb(0 0 0 / 50%);
+  position: relative;
+}
+
+li.sold-out::before {
+  content: '';
+  display: block;
+  background: url(./images/품절.png) no-repeat center rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+li.sold-out::after {
+  content: '품절';
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+  color: transparent;
 }
 
 .button-cola {
@@ -69,11 +92,9 @@
   padding: 5px 16px 5px 15px;
 }
 
-/* 오른쪽 자판기 컨테이너 시작 */
-
 .my-status {
   width: 360px;
-  background-color: #fff;
+  background-color: #eae8fe;
 }
 
 .checkout-balance {
@@ -87,7 +108,7 @@
 
 .get-change-button,
 .input-button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 50%);
   font-size: 13px;
   border-radius: 5px;
   /* text-align: center; */
@@ -113,13 +134,15 @@
   border: 1px solid #bdbdbd;
   border-radius: 5px;
   background-color: #eae8fe;
-  padding: 12px 18px 12px 12px;
+  padding: 12px 10px 12px 12px;
+  margin-bottom: 6px;
 }
 
 .my-cola-list li {
   padding: 8px;
   border-radius: 5px;
   background-color: #fff;
+  /* width: 100%; */
 }
 
 .my-cola-list li + li {
@@ -129,6 +152,7 @@
 .my-cola-image {
   width: 18px;
   height: 33px;
+  vertical-align: middle;
 }
 
 .container-checkout {
@@ -138,8 +162,75 @@
   gap: 12px;
 }
 
+.my-cola-name {
+  font-size: 9px;
+  margin-left: 10px;
+}
+
+.my-cola-number {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  float: right;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-cola-button {
+  width: 94px;
+  border-radius: 5px;
+  color: #fff;
+  background: #6327fe;
+}
+
 .checkout-balance,
 .input-money,
 .my-cola-list {
   grid-column: 1/3;
+}
+
+/* 오른쪽 자판기 컨테이너 시작 */
+
+.my-balance {
+  padding: 9px 27px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.my-balance-txt {
+  background-color: #eae8fe;
+  border-radius: 5px;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-balance-won {
+  font-weight: 700;
+}
+
+.my-cola-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.my-cola {
+  background-color: #fff;
+  padding: 25px 27px 26px 27px;
+}
+
+.list-done {
+  height: 374px;
+}
+
+.total-money {
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 15px;
 }

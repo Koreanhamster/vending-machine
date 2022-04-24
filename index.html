@@ -21,10 +21,10 @@
               <span class="price-cola">1000원</span>
             </button>
           </li>
-          <li>
+          <li class="sold-out">
             <button class="button-cola">
               <img class="image-cola" src="./images/cola-violet.svg" alt="" />
-              <strong class="name-cola soldout">Violet Cola</strong>
+              <strong class="name-cola">Violet Cola</strong>
               <span class="price-cola">1000원</span>
             </button>
           </li>
@@ -59,9 +59,7 @@
         </ul>
         <section class="container-checkout">
           <h2 class="ir">구매를 위한 정보</h2>
-          <p class="checkout-balance">
-            잔액: <span class="checkout-won">원</span>
-          </p>
+          <p class="checkout-balance">잔액 : <span>원</span></p>
           <button class="get-change-button">거스름돈 반환</button>
           <input class="input-money" type="number" placeholder="입금액 입력" />
           <button class="input-button">입금</button>
@@ -86,23 +84,23 @@
       </section>
       <section class="my-status">
         <h2 class="ir">나의 상태 확인</h2>
-        <div class="my-blalnce">
+        <div class="my-balance">
           <p class="my-balance-txt">
-            소지금: <span class="my-balance-won">30,000원</span>
+            소지금 : <span class="my-balance-won">30,000원</span>
           </p>
         </div>
         <section class="my-cola">
           <h2 class="ir">획득한 음료 확인창</h2>
           <p class="my-cola-text">획득한 음료</p>
-          <ul class="my-cola-list">
+          <ul class="my-cola-list list-done">
             <li>
-              <img class="my-cola-green" src="./images/cola-green.png" alt="" />
+              <img class="my-cola-image" src="./images/cola-green.png" alt="" />
               <strong class="my-cola-name">Green Cola</strong>
               <span class="my-cola-number">1</span>
             </li>
             <li>
               <img
-                class="my-cola-green"
+                class="my-cola-image"
                 src="./images/cola-orange.png"
                 alt=""
               />
@@ -110,7 +108,7 @@
               <span class="my-cola-number">2</span>
             </li>
           </ul>
-          <p class="total-money">총금액: 0원</p>
+          <p class="total-money">총금액: 3000원</p>
         </section>
       </section>
     </main>
